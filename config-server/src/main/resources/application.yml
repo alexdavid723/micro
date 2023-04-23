@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/digitallab-academy/ms-course-youtube.git
+          uri: https://github.com/noetipo/microservicios.git
           searchPaths: config-data
           username: noetipo
           password: Tipo47259697

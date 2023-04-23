@@ -1,10 +1,10 @@
 spring:
   application:
     name: cliente-service
-  cloud:
-    config:
-      enabled: true
-      uri: http://localhost:8083
+  profiles:
+    active: development
+  config:
+    import: optional:configserver:http://root:s3cr3t@localhost:8083
 
 
 
