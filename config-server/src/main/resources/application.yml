@@ -2,6 +2,8 @@ server:
   port: 8083
 
 spring:
+  application:
+    name: config-server
   cloud:
     config:
       server:
@@ -10,6 +12,8 @@ spring:
           searchPaths: config-data
           username: noetipo
           password: Tipo47259697
+          default-label: main
+
 
   security:
     user:
