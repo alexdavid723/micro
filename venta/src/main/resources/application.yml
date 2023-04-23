@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 8082
 spring:
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/catalogo
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/venta
     username: root
     password:
 
