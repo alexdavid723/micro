@@ -17,9 +17,9 @@ public class CatalogoApplication {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI().info(new Info()
-                .title("OPEN API SISTEMA DE ASISTENCIA")
+                .title("OPEN API MICROSERVICIO CATALOGO ")
                 .version("0.0.1")
-                .description("Servicios web de asistencia")
+                .description("Servicios web catalogo")
                 .termsOfService("http://swagger.io/terms/")
                 .license(new License().name("Apache 2.0").url("http://springdoc.org"))
         );
