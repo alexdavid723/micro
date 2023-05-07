@@ -27,7 +27,7 @@ resilience4j.circuitbreaker:
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
       slidingWindowType: TIME_BASED
-      minimumNumberOfCalls: 20
+      minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
       eventConsumerBufferSize: 10
@@ -36,22 +36,22 @@ resilience4j.circuitbreaker:
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
       slidingWindowType: TIME_BASED
-      minimumNumberOfCalls: 20
+      minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
       eventConsumerBufferSize: 10
 
 
 
-management:
-  health:
-    circuitbreakers:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: health
-  endpoint:
-    health:
-      show-details:
-        always:
+#management:
+#  health:
+#    circuitbreakers:
+#      enabled: true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health
+#  endpoint:
+#    health:
+#      show-details:
+#        always:
