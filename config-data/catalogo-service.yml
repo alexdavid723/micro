@@ -19,12 +19,15 @@ spring:
     username: root
     password:
 
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8090/eureka/
+
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8090/eureka/
-
-
+      defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
 
 
 
