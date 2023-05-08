@@ -15,8 +15,7 @@ spring:
         - id: catalogo-service
           uri: lb://catalogo-service
           predicates:
-            - Path=/categoria/**
-            - Path=/producto/**
+            - Path=/categoria/**,/producto/**
         - id: cliente-service
           uri: lb://cliente-service
           predicates:
