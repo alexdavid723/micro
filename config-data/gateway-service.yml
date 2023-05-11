@@ -16,6 +16,14 @@ spring:
           uri: lb://catalogo-service
           predicates:
             - Path=/categoria/**,/producto/**
+          metadata:
+            cors:
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+            allowedHeaders: '*'
+            maxAge: 30
         - id: cliente-service
           uri: lb://cliente-service
           predicates:
@@ -24,4 +32,5 @@ spring:
           uri: lb://venta-service
           predicates:
             - Path=/venta/**
+
 
