@@ -17,11 +17,10 @@ spring:
           predicates:
             - Path=/categoria/**,/producto/**
           metadata:
-            cors:
-              allowedOrigins: '*'
-              allowedMethods:
-                - GET
-                - POST
+            allowedOrigins: '*'
+            allowedMethods:
+              - GET
+              - POST
             allowedHeaders: '*'
             maxAge: 30
         - id: cliente-service

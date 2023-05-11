@@ -16,7 +16,7 @@ public class GatewayServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayServerApplication.class, args);
     }
-    @Bean
+   /*   @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder, Function<GatewayFilterSpec, UriSpec> brutalCorsFilters) {
         return builder.routes()
                 .route(p -> p.path("/users/**").filters(brutalCorsFilters).uri("https://localhost:9443"))
@@ -25,12 +25,12 @@ public class GatewayServerApplication {
                 .build();
     }
 
-    @Bean
+  @Bean
     Function<GatewayFilterSpec, UriSpec> brutalCorsFilters() {
         return f -> f
                 .setResponseHeader("Access-Control-Allow-Origin", "*")
                 .setResponseHeader("Access-Control-Allow-Methods", "*")
                 .setResponseHeader("Access-Control-Expose-Headers", "*");
     }
-
+*/
 }
