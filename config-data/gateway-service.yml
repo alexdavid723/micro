@@ -8,6 +8,14 @@ eureka:
 spring:
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
       discovery:
         locator:
           enabled: true
@@ -16,13 +24,6 @@ spring:
           uri: lb://catalogo-service
           predicates:
             - Path=/categoria/**,/producto/**
-          metadata:
-            allowedOrigins: '*'
-            allowedMethods:
-              - GET
-              - POST
-            allowedHeaders: '*'
-            maxAge: 30
         - id: cliente-service
           uri: lb://cliente-service
           predicates:
